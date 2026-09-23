@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560">
+ <rect width="720" height="560" fill="#304bd4"/>
+ <g fill="#f5f7ff" font-family="Arial, sans-serif"><text x="50" y="70" font-size="17" letter-spacing="4">IN ORBIT</text><text x="669" y="70" font-size="17" text-anchor="end">002</text></g>
+ <g fill="none" stroke="#b1bff8" stroke-width="2"><ellipse cx="360" cy="290" rx="233" ry="98" transform="rotate(-32 360 290)"/><ellipse cx="360" cy="290" rx="233" ry="98" transform="rotate(32 360 290)"/><circle cx="360" cy="290" r="135"/></g>
+ <circle cx="360" cy="290" r="64" fill="#f0f3ff"/><circle cx="535" cy="169" r="25" fill="#d6eaa3"/>
+ <path d="M51 493h618" stroke="#a4b6ff"/><text x="50" y="527" fill="#f5f7ff" font-size="13" font-family="Arial, sans-serif" letter-spacing="3">A STUDY IN BALANCE.</text>
+</svg>

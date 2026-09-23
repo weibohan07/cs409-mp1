@@ -1,13 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Albert's digital notebook: small experiments in design, development, and motion."
+    />
+    <meta name="theme-color" content="#f7f8f3" />
+    <title>Albert — A Digital Notebook</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <nav class="container nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Albert, back to start"
+          >albert<span class="brand-mark" aria-hidden="true">✳</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">+</span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" data-nav aria-current="location">Start</a></li>
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#work" data-nav>Work</a></li>
+          <li><a href="#motion" data-nav>Motion</a></li>
+          <li>
+            <a href="#contact" data-nav
+              >Contact <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section
+        class="hero"
+        id="home"
+        data-section
+        aria-labelledby="hero-title"
+        tabindex="-1"
+      >
+        <div class="container hero-content">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>A DIGITAL
+            NOTEBOOK / VOL. 01
+          </p>
+          <h1 id="hero-title">
+            A little code.<br />A little <em>character.</em>
+          </h1>
+          <p class="hero-description">
+            Small experiments in design, development, and motion.<br
+              class="desktop-break"
+            />
+            Built with curiosity. Made to be explored.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+              >Explore the work <span aria-hidden="true">↘</span></a
+            >
+            <a class="text-link" href="#motion"
+              >Watch a little motion <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-index" aria-label="Areas of interest">
+            <span>01 / DESIGN</span><span>02 / DEVELOPMENT</span
+            ><span>03 / MOTION</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section about"
+        id="about"
+        data-section
+        aria-labelledby="about-title"
+        tabindex="-1"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / THE APPROACH</p>
+              <h2 id="about-title">Simple on purpose.</h2>
+            </div>
+            <p>
+              A few things I like to explore: clear interfaces, useful
+              interactions, and a little movement in the right places.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="card-top">
+                <span class="icon icon-design" aria-hidden="true"></span
+                ><span class="card-number">01</span>
+              </div>
+              <h3>Make it clear.</h3>
+              <p>
+                Start with the essentials. Give the content room to breathe, and
+                make the next step easy to find.
+              </p>
+              <span class="card-label">DESIGN &amp; HIERARCHY</span>
+            </article>
+            <article class="feature-card">
+              <div class="card-top">
+                <span class="icon icon-code" aria-hidden="true"></span
+                ><span class="card-number">02</span>
+              </div>
+              <h3>Make it work.</h3>
+              <p>
+                Turn the idea into a small, working experience. Keep the
+                structure readable and the interactions predictable.
+              </p>
+              <span class="card-label">CODE &amp; INTERACTION</span>
+            </article>
+            <article class="feature-card">
+              <div class="card-top">
+                <span class="icon icon-motion" aria-hidden="true"></span
+                ><span class="card-number">03</span>
+              </div>
+              <h3>Make it feel right.</h3>
+              <p>
+                Add motion where it helps: a quiet transition, a clear response,
+                or an unexpected moment of personality.
+              </p>
+              <span class="card-label">TIMING &amp; CHARACTER</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section work"
+        id="work"
+        data-section
+        aria-labelledby="work-title"
+        tabindex="-1"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / OPEN SOURCE</p>
+              <h2 id="work-title">Selected projects.</h2>
+            </div>
+            <p>
+              A few open-source projects I have worked on, ranging from runtime
+              infrastructure to HTTP systems and Markdown tooling.
+            </p>
+          </div>
+
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Selected open-source projects"
+            tabindex="0"
+          >
+            <div class="carousel-stage">
+              <div class="slides" id="project-slides">
+                <!-- Syna -->
+                <article
+                  class="slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="1 of 3: Syna"
+                >
+                  <img
+                    class="slide-art"
+                    src="assets/study-layout.svg"
+                    alt="Abstract project artwork for Syna."
+                    width="720"
+                    height="560"
+                  />
+
+                  <div class="slide-copy">
+                    <p class="eyebrow">PROJECT 001 / TYPESCRIPT</p>
+                    <h3>Syna.</h3>
+
+                    <p>
+                      A dependency and lifetime management system for stateful
+                      TypeScript services. It models how services are created,
+                      shared, reused, and disposed across different execution
+                      environments.
+                    </p>
+
+                    <ul class="tags" aria-label="Technologies">
+                      <li>TypeScript</li>
+                      <li>Runtime</li>
+                    </ul>
+
+                    <button
+                      class="button button-dark"
+                      type="button"
+                      data-project="syna"
+                      aria-haspopup="dialog"
+                      aria-controls="project-dialog"
+                    >
+                      Open project notes
+                      <span aria-hidden="true">↗</span>
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Oxidase -->
+                <article
+                  class="slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="2 of 3: Oxidase"
+                  hidden
+                >
+                  <img
+                    class="slide-art"
+                    src="assets/study-orbit.svg"
+                    alt="Abstract project artwork for Oxidase."
+                    width="720"
+                    height="560"
+                  />
+
+                  <div class="slide-copy">
+                    <p class="eyebrow">PROJECT 002 / RUST</p>
+                    <h3>Oxidase.</h3>
+
+                    <p>
+                      A declarative HTTP service compiler and runtime written in
+                      Rust. Gateway configuration is compiled into an immutable
+                      runtime that can route, transform, proxy, and serve HTTP
+                      traffic.
+                    </p>
+
+                    <ul class="tags" aria-label="Technologies">
+                      <li>Rust</li>
+                      <li>HTTP</li>
+                    </ul>
+
+                    <button
+                      class="button button-dark"
+                      type="button"
+                      data-project="oxidase"
+                      aria-haspopup="dialog"
+                      aria-controls="project-dialog"
+                    >
+                      Open project notes
+                      <span aria-hidden="true">↗</span>
+                    </button>
+                  </div>
+                </article>
+
+                <!-- remark-curly-directive -->
+                <article
+                  class="slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="3 of 3: remark-curly-directive"
+                  hidden
+                >
+                  <img
+                    class="slide-art"
+                    src="assets/study-sound.svg"
+                    alt="Abstract project artwork for remark-curly-directive."
+                    width="720"
+                    height="560"
+                  />
+
+                  <div class="slide-copy">
+                    <p class="eyebrow">PROJECT 003 / MARKDOWN</p>
+                    <h3>remark-curly-directive.</h3>
+
+                    <p>
+                      A small syntax extension for the Unified and Remark
+                      ecosystem. It parses curly-brace directives such as
+                      {{...}} into typed MDAST nodes while keeping their meaning
+                      up to downstream plugins.
+                    </p>
+
+                    <ul class="tags" aria-label="Technologies">
+                      <li>Remark</li>
+                      <li>TypeScript</li>
+                    </ul>
+
+                    <button
+                      class="button button-dark"
+                      type="button"
+                      data-project="curly"
+                      aria-haspopup="dialog"
+                      aria-controls="project-dialog"
+                    >
+                      Open project notes
+                      <span aria-hidden="true">↗</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+
+              <button
+                class="carousel-arrow previous"
+                type="button"
+                aria-label="Previous project"
+                aria-controls="project-slides"
+              >
+                <span aria-hidden="true">←</span>
+              </button>
+
+              <button
+                class="carousel-arrow next"
+                type="button"
+                aria-label="Next project"
+                aria-controls="project-slides"
+              >
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <div class="carousel-footer">
+              <p
+                class="slide-status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                01 / 03 — Syna
+              </p>
+
+              <div
+                class="carousel-dots"
+                role="group"
+                aria-label="Choose a project"
+              >
+                <button
+                  type="button"
+                  data-slide="0"
+                  aria-label="Show project 1: Syna"
+                  aria-current="true"
+                >
+                  <span></span>
+                </button>
+
+                <button
+                  type="button"
+                  data-slide="1"
+                  aria-label="Show project 2: Oxidase"
+                >
+                  <span></span>
+                </button>
+
+                <button
+                  type="button"
+                  data-slide="2"
+                  aria-label="Show project 3: remark-curly-directive"
+                >
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section motion"
+        id="motion"
+        data-section
+        aria-labelledby="motion-title"
+        tabindex="-1"
+      >
+        <div class="container motion-content">
+          <p class="eyebrow">03 / A MOMENT IN MOTION</p>
+          <h2 id="motion-title">Same shapes. New rhythm.</h2>
+          <p class="motion-intro">
+            A six-second visual study. Sometimes a small movement says enough.
+          </p>
+          <figure class="film">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/motion-poster.jpg"
+              width="960"
+              height="540"
+              aria-label="Six-second silent animation of orbiting geometric shapes"
+              aria-describedby="film-caption"
+            >
+              <source src="assets/motion.mp4" type="video/mp4" />
+              <track
+                kind="captions"
+                src="assets/motion.vtt"
+                srclang="en"
+                label="English description"
+              />
+              Your browser does not support HTML5 video.
+              <a href="assets/motion.mp4">Open the MP4 video.</a>
+            </video>
+            <figcaption id="film-caption">
+              <span>STUDY IN MOTION / 00:06</span
+              ><span>Silent film. Press play.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="section contact"
+      id="contact"
+      data-section
+      aria-labelledby="contact-title"
+      tabindex="-1"
+    >
+      <div class="container">
+        <p class="eyebrow">04 / KEEP IN TOUCH</p>
+        <h2 id="contact-title">
+          Good things start<br />with a little curiosity.
+        </h2>
+        <a
+          class="button button-primary"
+          href="https://github.com/weibohan07"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Find me on GitHub <span aria-hidden="true">↗</span></a
+        >
+        <div class="footer-bottom">
+          <p>&copy; 2026 Albert. A small corner of the internet.</p>
+          <div class="social-links" aria-label="Social links">
+            <a
+              href="https://github.com/weibohan07"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Albert on GitHub (opens in a new tab)"
+              ><span class="icon icon-github" aria-hidden="true"></span
+              ><span>GitHub</span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/wbh07/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Albert on LinkedIn (opens in a new tab)"
+              ><span class="icon icon-linkedin" aria-hidden="true"></span
+              ><span>LinkedIn</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-summary"
+    >
+      <div class="dialog-heading">
+        <p class="eyebrow">INSIDE THE STUDY</p>
+        <button
+          class="dialog-close"
+          type="button"
+          aria-label="Close project notes"
+          autofocus
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <h2 id="dialog-title">Project notes</h2>
+      <p id="dialog-summary"></p>
+      <h3>The idea</h3>
+      <p id="dialog-idea"></p>
+      <h3>A few details</h3>
+      <ul id="dialog-details"></ul>
+      <p class="dialog-note">
+        An illustrative concept for this notebook, not a shipped client project.
+      </p>
+      <button class="button button-dark dialog-done" type="button">
+        Back to the collection <span aria-hidden="true">↙</span>
+      </button>
+    </dialog>
+    <noscript
+      ><p class="noscript-note">
+        Enable JavaScript to use the project carousel, project notes, and
+        navigation indicator.
+      </p></noscript
+    >
+  </body>
 </html>
